@@ -1,0 +1,51 @@
+﻿@model MVCTemplate.Models.ModelosCamara.T_Usuarios
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>T_Usuarios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.T_Empleados.NombreCompleto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.T_Empleados.NombreCompleto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.T_Roles.NombreRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.T_Roles.NombreRol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contraseña)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contraseña)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contraseñaRostro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contraseñaRostro)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDusuario }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

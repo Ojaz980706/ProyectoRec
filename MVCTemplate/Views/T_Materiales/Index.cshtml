@@ -1,0 +1,58 @@
+﻿@model IEnumerable<MVCTemplate.Models.ModelosCamara.T_Materiales>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" id="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Marca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modelo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Marca)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Modelo)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.IDmaterial }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.IDmaterial }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.IDmaterial })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('#spanMateriales').css({ 'background-color': '#ffa500', 'color': '#fff' });
+
+    });
+</script>

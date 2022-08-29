@@ -1,0 +1,47 @@
+﻿@model IEnumerable<MVCTemplate.Models.ModelosCamara.T_Roles>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" id="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreRol)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NombreRol)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.IDrol }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.IDrol }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.IDrol })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('#spanRoles').css({ 'background-color': '#ffa500', 'color': '#fff' });
+
+    });
+</script>

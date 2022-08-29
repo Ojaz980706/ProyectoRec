@@ -1,0 +1,51 @@
+﻿@model MVCTemplate.Models.ModelosCamara.T_Transacciones
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>T_Transacciones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.T_Empleados.NombreCompleto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.T_Empleados.NombreCompleto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.T_Materiales.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.T_Materiales.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechayHora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechayHora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDtransaccion }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

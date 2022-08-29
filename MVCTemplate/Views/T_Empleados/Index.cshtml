@@ -1,0 +1,65 @@
+﻿@model IEnumerable<MVCTemplate.Models.ModelosCamara.T_Empleados>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" id="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.T_Areas.NombreArea)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreCompleto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Puesto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cara)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.T_Areas.NombreArea)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NombreCompleto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Puesto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cara)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.NoEmpleado }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.NoEmpleado }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.NoEmpleado })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('#spanEmpleados').css({ 'background-color': '#ffa500', 'color': '#fff' });
+
+    });
+</script>

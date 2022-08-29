@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MVCTemplate.Models.ModelosCamara.T_Areas>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" id="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreArea)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NombreArea)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.IDarea }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.IDarea }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.IDarea })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('#spanAreas').css({ 'background-color': '#ffa500', 'color': '#fff' });
+
+    });
+</script>

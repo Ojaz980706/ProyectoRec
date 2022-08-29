@@ -1,0 +1,64 @@
+﻿@model IEnumerable<MVCTemplate.Models.ModelosCamara.T_Usuarios>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" id="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.T_Empleados.NombreCompleto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.T_Roles.NombreRol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contraseña)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.contraseñaRostro)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.T_Empleados.NombreCompleto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.T_Roles.NombreRol)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contraseña)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.contraseñaRostro)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.IDusuario }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.IDusuario }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.IDusuario })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('#spanUsuarios').css({ 'background-color': '#ffa500', 'color': '#fff' });
+
+    });
+</script>

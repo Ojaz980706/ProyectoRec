@@ -1,0 +1,481 @@
+﻿.widget[data-card] {
+    cursor:pointer
+}
+
+.bg-rocket {
+    background-color: #4e5c72;
+}
+
+.flaticon-bg-rocket {
+    background-image: url('../../Content/flaticon/gif/Rocket.gif');
+    background-position: center;
+    background-position-y: -3.5em;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.flaticon-bg-card5 {
+    background-image: url('../../Content/flaticon/svg/id-card-5.svg');
+    background-position: top center;
+    background-position-y: -1.333em;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.flaticon-bg-medical-emergencies {
+    background-image: url('../../Content/flaticon/gif/Medical-Emergencies.gif');
+    background-position: center;
+    background-position-y: -5.5em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flaticon-bg-calendar {
+    background-image: url('../../Content/flaticon/gif/calendar-flip.gif');
+    background-position: center;
+    background-position-y: -5.5em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-magnifier {
+    background-color: #e0985e;
+}
+
+.flaticon-bg-magnifier {
+    background-image: url('../../Content/flaticon/gif/Magnifier.gif');
+    background-position: center;
+    background-position-y: -1.5em;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+#page {
+    display: none;
+}
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    /*background-color: rgba(192, 192, 192, 0.5);*/
+    background-image: url("../flaticon/gif/loader.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.loading-page {
+    background: #000000;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.white-spacing-default {
+    white-space: normal;
+}
+
+[data-card="calendario"] {
+    background-color: rgb(248,248,248);
+}
+
+/* BEGIN OF RETURN TO TOP ARROW CSS */
+#return-to-top {
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+    #return-to-top i {
+        color: #fff;
+        margin: 0;
+        position: relative;
+        left: 16px;
+        top: 13px;
+        font-size: 19px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    #return-to-top:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+        #return-to-top:hover i {
+            color: #fff;
+            top: 5px;
+        }
+/* END OF RETURN TO TOP ARROW CSS */
+
+.half-width {
+    width: 50% !important;
+}
+
+.half-width-left {
+    width: 50% !important;
+    left: 50% !important;
+}
+/* CSS PARA ODONTOGRAMA */
+.tooth {
+    background-image: url('../flaticon/svg/tooth.svg');
+    /*position: absolute;*/
+    height: 3em;
+    width: 3em;
+    margin-top:1em;
+}
+
+.tooth-dot {
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: -0.5em;
+}
+
+/* CSS SPRITE PARA EL ODONTOGRAMA */
+/* PRIMER SECCION */
+div.D_18 {
+    background: url('../../Content/img/odontograma/tooth-chart.png')no-repeat -11px -28px;
+    width: 29px;
+    height: 55px;
+}
+
+div.D_17 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -52px -22px;
+    width: 31px;
+    height: 63px;
+}
+
+div.D_16 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -91px -21px;
+    width: 33px;
+    height: 64px;
+}
+
+div.D_15 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -128px -16px;
+    width: 22px;
+    height: 69px;
+}
+
+div.D_14 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -151px -18px;
+    width: 23px;
+    height: 67px;
+}
+
+div.D_13 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -177px -3px;
+    width: 24px;
+    height: 82px;
+}
+
+div.D_12 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -203px -12px;
+    width: 21px;
+    height: 73px;
+}
+
+div.D_11 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -224px -12px;
+    width: 27px;
+    height: 73px;
+}
+
+/*SEGUNDA SECCION */
+div.D_21 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -252px -12px;
+    width: 25px;
+    height: 72px;
+}
+
+div.D_22 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -278px -15px;
+    width: 21px;
+    height: 70px;
+}
+
+div.D_23 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -301px -3px;
+    width: 24px;
+    height: 82px;
+}
+
+div.D_24 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -328px -18px;
+    width: 21px;
+    height: 67px;
+}
+
+div.D_25 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -350px -16px;
+    width: 23px;
+    height: 69px;
+}
+
+div.D_26 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -378px -21px;
+    width: 32px;
+    height: 65px;
+}
+
+div.D_27 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -418px -22px;
+    width: 32px;
+    height: 63px;
+}
+
+div.D_28 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -458px -30px;
+    width: 29px;
+    height: 55px;
+}
+
+/* TERCERA SECCION */
+div.D_48 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -1px -102px;
+    width: 41px;
+    height: 56px;
+}
+div.D_47 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -46px -100px;
+    width: 35px;
+    height: 61px;
+}
+div.D_46 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -84px -100px;
+    width: 39px;
+    height: 67px;
+}
+div.D_45 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -125px -101px;
+    width: 23px;
+    height: 69px;
+}
+div.D_44 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -153px -101px;
+    width: 21px;
+    height: 69px;
+}
+div.D_43 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -181px -99px;
+    width: 22px;
+    height: 79px;
+}
+div.D_42 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -211px -98px;
+    width: 16px;
+    height: 72px;
+}
+div.D_41 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -231px -98px;
+    width: 17px;
+    height: 65px;
+}
+
+/* CUARTA SECCION */
+div.D_31 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -251px -98px;
+    width: 16px;
+    height: 65px;
+}
+div.D_32 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -271px -98px;
+    width: 17px;
+    height: 72px;
+}
+div.D_33 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -294px -100px;
+    width: 23px;
+    height: 78px;
+}
+div.D_34 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -323px -101px;
+    width: 22px;
+    height: 69px;
+}
+div.D_35 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -350px -101px;
+    width: 23px;
+    height: 69px;
+}
+div.D_36 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -377px -100px;
+    width: 40px;
+    height: 67px;
+}
+div.D_37 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -419px -100px;
+    width: 35px;
+    height: 61px;
+}
+div.D_38 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -456px -102px;
+    width: 42px;
+    height: 56px;
+}
+
+/* CSS SPRITES ODONTOGRAMA PARA NIÑOS */
+/* PRIMERA SECCION */
+div.D_55 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -52px -22px;
+    width: 31px;
+    height: 63px;
+}
+div.D_54 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -91px -21px;
+    width: 33px;
+    height: 64px;
+}
+div.D_53 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -177px -3px;
+    width: 24px;
+    height: 82px;
+}
+div.D_52 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -203px -15px;
+    width: 20px;
+    height: 70px;
+}
+div.D_51 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -224px -12px;
+    width: 26px;
+    height: 72px;
+}
+/* SEGUNDA SECCION */
+div.D_61 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -252px -12px;
+    width: 25px;
+    height: 72px;
+}
+
+div.D_62 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -278px -15px;
+    width: 21px;
+    height: 70px;
+}
+
+div.D_63 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -301px -3px;
+    width: 24px;
+    height: 82px;
+}
+
+div.D_64 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -378px -21px;
+    width: 32px;
+    height: 65px;
+}
+
+div.D_65 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -418px -22px;
+    width: 32px;
+    height: 63px;
+}
+/* TERCERA SECCION */
+div.D_85 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -46px -100px;
+    width: 35px;
+    height: 61px;
+}
+
+div.D_84 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -84px -100px;
+    width: 39px;
+    height: 67px;
+}
+
+div.D_83 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -181px -99px;
+    width: 22px;
+    height: 79px;
+}
+
+div.D_82 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -211px -98px;
+    width: 16px;
+    height: 72px;
+}
+
+div.D_81 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -231px -98px;
+    width: 17px;
+    height: 65px;
+}
+/* CUARTA SECCION */
+div.D_71 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -251px -98px;
+    width: 16px;
+    height: 65px;
+}
+
+div.D_72 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -271px -98px;
+    width: 17px;
+    height: 72px;
+}
+
+div.D_73 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -294px -100px;
+    width: 23px;
+    height: 78px;
+}
+
+div.D_74 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -377px -100px;
+    width: 40px;
+    height: 67px;
+}
+
+div.D_75 {
+    background: url('../../Content/img/odontograma/tooth-chart.png') no-repeat -419px -100px;
+    width: 35px;
+    height: 61px;
+}
+/* COLORES DE LAS TABLAS DE ENCUESTAS */
+.bg-nulo {
+    background-color: #58F0DE !important;
+}
+.bg-bajo {
+    background-color: #4FE7A4 !important;
+}
+.bg-medio {
+    background-color: #FCE019 !important;
+}
+.bg-alto {
+    background-color: #FFBF3F !important;
+}
+.bg-muyalto {
+    background-color: #FD4922 !important;
+}

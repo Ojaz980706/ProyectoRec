@@ -1,0 +1,27 @@
+﻿@model MVCTemplate.Models.ModelosCamara.T_Areas
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>T_Areas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreArea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreArea)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDarea }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
